@@ -1,13 +1,17 @@
 import React from 'react'
-import { Nav, Hero, Examples, Services } from '../components/_home'
-
+import { Nav, Hero, Examples, Services, Footer, Contact } from '../components/_home'
+import { ScrollShadow } from "@nextui-org/scroll-shadow";
 export default function Home() {
    return (
-      <div>
-         <Nav />
-         <Hero />
-         <Examples />
-         <Services />
-      </div>
+      <ScrollShadow className='h-full'>
+         <div>
+            <Nav />
+            <Hero />
+            <Examples />
+            <Services />
+            <Contact />
+            <Footer />
+         </div>
+      </ScrollShadow>
    )
 }

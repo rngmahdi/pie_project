@@ -1,9 +1,11 @@
 import React from 'react'
 import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import { FaCode, FaArrowPointer, FaHammer, FaHelmetSafety } from "react-icons/fa6";
 export function Services() {
   const services = [
     {
       "service_id": 1,
+      "icon": <FaArrowPointer className='h-full w-full' />,
       "service_name": "Custom Website Creation",
       "details": [
         "Tailored graphic design aligned with your brand identity.",
@@ -13,6 +15,7 @@ export function Services() {
     },
     {
       "service_id": 2,
+      "icon": <FaCode className='h-full w-full' />,
       "service_name": "Web Development",
       "details": [
         "Front-end development using HTML, CSS, JavaScript, and animations.",
@@ -22,6 +25,7 @@ export function Services() {
     },
     {
       "service_id": 5,
+      "icon": <FaHelmetSafety className='h-full w-full' />,
       "service_name": "Maintenance and Support",
       "details": [
         "Technical support for resolving issues via phone, email, or chat.",
@@ -32,6 +36,7 @@ export function Services() {
     },
     {
       "service_id": 10,
+      "icon": <FaHammer className='h-full w-full' />,
       "service_name": "Software and Computer Repair",
       "details": [
         "Software repair services including bug fixes and reinstallation.",
@@ -42,20 +47,16 @@ export function Services() {
   ]
   return (
     <>
-      <div className='flex flex-col items-center'>
+      <div id='services' className='flex flex-col items-center py-20'>
         <h2 className='font-semibold text-2xl'>Services</h2>
-        <div className='mt-12 grid grid-cols-2 mb-60 gap-6'>
+        <div className='pt-12 grid grid-cols-2 pb-20 gap-6'>
           {services.map((service) => {
             return (
               <Card className="max-w-[600px]">
                 <CardHeader className="flex gap-3">
-                  <Image
-                    alt="nextui logo"
-                    height={40}
-                    radius="sm"
-                    src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                    width={40}
-                  />
+                  <div className='w-10 h-10'>
+                    {service.icon}
+                  </div>
                   <div className="flex flex-col">
                     <p className="text-md">{service.service_name}</p>
                   </div>

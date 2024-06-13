@@ -4,25 +4,48 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 export function Nav() {
   return (
     <>
-      <Navbar position="static">
+      <Navbar position="sticky" >
         <NavbarBrand>
-          <img src="src/assets/logo.png" alt="" width={64} />
+          <img src="src/assets/logo.svg" alt="..." width={64} />
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
-            <Link color="foreground" href="#" className='text-xl'>
-              Home
-            </Link>
-          </NavbarItem>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page" className='text-xl'>
+            <p href="#hero" color="foreground" className='text-xl cursor-pointer'
+              onClick={() => {
+                let element = document.getElementById("hero")
+                element.scrollIntoView({ block: "start", behavior: "smooth" })
+              }}
+            >
+              Home
+            </p>
+          </NavbarItem>
+          <NavbarItem >
+            <p href="#examples" color="foreground" className='text-xl cursor-pointer'
+              onClick={() => {
+                let element = document.getElementById("examples")
+                element.scrollIntoView({ block: "start", behavior: "smooth" })
+              }}
+            >
+              Examples
+            </p>
+          </NavbarItem>
+          <NavbarItem >
+            <p href="#services" color="foreground" className='text-xl cursor-pointer' onClick={() => {
+              let element = document.getElementById("services")
+              element.scrollIntoView({ block: "start", behavior: "smooth" })
+            }}>
               Services
-            </Link>
+            </p>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#" className='text-xl'>
+            <p href="#contact" color="foreground" className='text-xl cursor-pointer'
+              onClick={() => {
+                let element = document.getElementById("contact")
+                element.scrollIntoView({ block: "start", behavior: "smooth" })
+              }}
+            >
               Contact
-            </Link>
+            </p>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
