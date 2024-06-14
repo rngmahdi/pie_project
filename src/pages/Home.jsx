@@ -4,7 +4,7 @@ import { ScrollShadow } from "@nextui-org/scroll-shadow";
 export default function Home() {
    return (
       <ScrollShadow className='h-full'>
-         <div>
+         <div className='bg-slate-50'>
             <Nav />
             <Hero />
             <Examples />

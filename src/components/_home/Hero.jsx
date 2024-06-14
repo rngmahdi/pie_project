@@ -15,7 +15,8 @@ export function Hero() {
         <Button onClick={() => {
           let element = document.getElementById("examples")
           element.scrollIntoView({ block: "start",behavior:"smooth" })
-        }}>
+        }}
+        color='primary'>
           Learn More <FaArrowDown className='animate-bounce' />
         </Button>
       </div>
