@@ -1,4 +1,4 @@
-import { Button } from '@nextui-org/react';
+import { Button, Badge } from '@nextui-org/react';
 import React from 'react'
 import { FaArrowDown } from "react-icons/fa";
 
@@ -12,13 +12,17 @@ export function Hero() {
         </div>
       </div>
       <div className='flex content-center justify-center items-center gap-3 '>
-        <Button onClick={() => {
-          let element = document.getElementById("examples")
-          element.scrollIntoView({ block: "start", behavior: "smooth" })
-        }}
-          color='primary'>
+        {/* <Badge color="danger" content={''} shape="circle" className='ms-2 p-1'> */}
+        <Button
+          onClick={() => {
+            let element = document.getElementById("examples")
+            element.scrollIntoView({ block: "start", behavior: "smooth" })
+          }}
+          color='primary'
+          className=''>
           Learn More <FaArrowDown className='animate-bounce h-6 w-6' />
         </Button>
+        {/* </Badge> */}
       </div>
     </>
   )

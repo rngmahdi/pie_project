@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip, Badge   } from "@nextui-org/react";
 import { FaCode, FaArrowPointer, FaHammer, FaHelmetSafety } from "react-icons/fa6";
 export function Services() {
   const services = [
@@ -48,7 +48,7 @@ export function Services() {
   return (
     <>
       <div id='services' className='flex flex-col items-center py-20'>
-        <h2 className='font-semibold text-2xl'>Services</h2>
+        <h2 className='font-semibold text-4xl'>Services</h2>
         <div className='pt-12 grid grid-cols-2 pb-20 gap-6'>
           {services.map((service) => {
             return (

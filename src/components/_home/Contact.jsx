@@ -4,7 +4,7 @@ export function Contact() {
    return (
       <>
          <div id="contact">
-            <div className='flex justify-center content-center my-4 text-2xl font-semibold'>
+            <div className='flex justify-center content-center my-4 text-4xl font-semibold'>
                Contact
             </div>
             <div className='flex w-[80%] m-auto justify-center items-center content-center'>
