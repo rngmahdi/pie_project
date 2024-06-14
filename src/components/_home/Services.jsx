@@ -58,7 +58,7 @@ export function Services() {
                     {service.icon}
                   </div>
                   <div className="flex flex-col">
-                    <p className="text-md">{service.service_name}</p>
+                    <p className="text-md font-semibold">{service.service_name}</p>
                   </div>
                 </CardHeader>
                 <Divider />
@@ -67,7 +67,7 @@ export function Services() {
 
                     {/* <p>Make beautiful websites regardless of your design experience.</p> */}
                     {service.details.map((ele) => (
-                      <li>*{ele}</li>
+                      <li className=''>*{ele}</li>
                     ))}
                   </ul>
                 </CardBody>

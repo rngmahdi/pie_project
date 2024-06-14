@@ -8,7 +8,13 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['Erode-Bold'],
+        'Erode': ['Erode-Variable'],
+        'Alpino': ['Alpino-Variable']
+      }
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
