@@ -3,8 +3,8 @@ import { Textarea, Input } from "@nextui-org/input";
 export function Contact() {
    return (
       <>
-         <div id="contact">
-            <div className='flex justify-center content-center my-4 text-4xl font-semibold'>
+         <div id="contact" className='bg-gradient-to-b from-slate-100'>
+            <div className='flex justify-center content-center py-4 text-4xl font-semibold'>
                Contact
             </div>
             <div className='flex w-[80%] m-auto justify-center items-center content-center'>
@@ -22,6 +22,7 @@ export function Contact() {
                   </div>
                </div>
             </div>
+            
          </div>
       </>
    )

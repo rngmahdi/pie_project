@@ -47,7 +47,7 @@ export function Services() {
   ]
   return (
     <>
-      <div id='services' className='flex flex-col items-center py-20'>
+      <div id='services' className='flex flex-col items-center py-20 bg-gradient-to-t from-slate-100'>
         <h2 className='font-semibold text-4xl'>Services</h2>
         <div className='pt-12 grid grid-cols-2 pb-20 gap-6'>
           {services.map((service) => {
