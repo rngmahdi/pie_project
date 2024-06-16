@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@n
 export function Nav() {
   return (
     <>
-      <Navbar className='bg-transparent font-Alpino font-semibold'  >
+      <Navbar className='bg-transparent font-Alpino font-semibold z-10'  >
         <NavbarBrand>
           <img src="src/assets/logo.svg" alt="..." width={64} />
         </NavbarBrand>
