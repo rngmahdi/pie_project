@@ -4,7 +4,7 @@ import { Image } from "@nextui-org/react";
 export function Examples() {
    return (
       <>
-         <div id='examples' className='pt-32 pb-20 flex flex-col justify-center items-center bg-gradient-to-b from-slate-100'>
+         <div id='examples' className='pt-32 pb-20 flex flex-col justify-center items-center bg-gradient-to-b from-transparent via-30% via-slate-100'>
             <div className='font-semibold text-4xl '>
                Examples
             </div>

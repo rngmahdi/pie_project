@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa6";
 export function Footer() {
    return (
       <>
-         <div className='flex flex-col items-center bg-gradient-to-b from-transparent  to-slate-300 pt-20 pb-10 '>
+         <div className='flex flex-col items-center bg-gradient-to-b from-transparent  to-slate-200 pt-20 pb-10 '>
             <div>
                <img className='w-20' src='src/assets/logo.svg' />
             </div>
